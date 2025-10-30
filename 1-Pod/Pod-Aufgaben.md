@@ -57,7 +57,7 @@ kubectl delete pod nginx-pod
 Mit folgendem Command kann ein Template im aktuellen Verzeichnis erstellt werden.
 
 ```bash
-❯ kubectl run nginx-pod --image=nginx:latest --port=80 --dry-run=client -o yaml > nginx.yaml`
+kubectl run nginx-pod --image=nginx:latest --port=80 --dry-run=client -o yaml > nginx.yaml
 ```
 
 Der Inhalt sollte folgendermassen ausehen:
