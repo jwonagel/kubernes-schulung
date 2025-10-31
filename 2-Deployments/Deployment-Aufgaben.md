@@ -1,8 +1,5 @@
 # Deployments
 
-Benötigte Tools:
-
-* [Kubernetes Templates](https://marketplace.visualstudio.com/items?itemName=lunuan.kubernetes-templates)
 
 
 ## Aufgabe 1: Deployment von Nginx

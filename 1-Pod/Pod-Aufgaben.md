@@ -45,6 +45,12 @@ kubectl port-forward pod/nginx-pod 8080:80 # Leitet den Container Port 80 auf lo
 
 Nun sollte die NGINX Standartseite auf http://localhost:8080 zur Verfügung stehen.
 
+In einem anderen Terminal können nun die Logs sichtbar gemacht werden.
+
+```bash
+kubectl logs nginx-pod
+```
+
 Der Pod kann mit folgendem Befehl wieder gelöscht werden:
 
 ```bash
@@ -103,7 +109,7 @@ Mit obigen Commands (get pod [PodName]) kann überprüft werden ob dieser Pod de
 
 > Aufgabe: Gebe die deployte YAML config aus und vergleiche diese mit der vorhin generierten YAML. Was sind die Unterschiede?
 
-Löschen des Pods:
+Pod wird für Aufgabe 3 noch benötigt.
 
 Aufgabe 3: Zugriff auf POD über CLI
 
