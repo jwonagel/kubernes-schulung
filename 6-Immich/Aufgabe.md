@@ -64,7 +64,10 @@ kind: ConfigMap
 metadata:
   name: immich-db-configmap-[kürzel]
 data:
-  init-db.sql: CREATE EXTENSION IF NOT EXISTS vector CASCADE
+  init-db.sql: |
+    CREATE EXTENSION IF NOT EXISTS vector CASCADE;
+    CREATE EXTENSION IF NOT EXISTS earthdistance CASCADE;
+
 ```
 
 Nach dem anwenden, kann man die Pods beobachten. Hier kann man festlellen, dasss zuerst ein init-pod für die CLuster Initialisierung erzeugt wird.
