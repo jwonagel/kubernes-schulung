@@ -20,7 +20,7 @@ services:
     #   # Do not edit the next line. If you want to change the media storage location on your system, edit the value of UPLOAD_LOCATION in the .env file
     #   - ./immichdata:/data
     #   - /etc/localtime:/etc/localtime:ro
-    enviroment:
+    environment:
       - TZ=Europe/Zurich
       - UPLOAD_LOCATION=./library
       - DB_PASSWORD=postgres
@@ -32,8 +32,7 @@ services:
       - redis
       - database
     restart: always
-    healthcheck:
-      disable: false
+
 
   immich-machine-learning:
     container_name: immich_machine_learning
@@ -46,8 +45,7 @@ services:
     volumes:
       - model-cache:/cache
     restart: always
-    healthcheck:
-      disable: false
+
 
   redis:
     container_name: immich_redis
